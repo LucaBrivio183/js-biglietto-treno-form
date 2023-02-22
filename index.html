@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /font awesome-->
     <!-- local css files -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- /local css files -->
     <title>Ticket price</title>
 </head>
 <body>
     <div class="container">
+            <label for="input-km">Insert km</label>
+            <input type="number" name="userKm" id="input-km">
+            <label for="input-age">Fascia di età:</label>
+            <select id="input-age" name="userAge">
+              <option value="standard">Maggiorenne</option>
+              <option value="minor">Minorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
     </div>
+   
     <!-- local js files -->
     <script src="js/main.js"></script>
 </body>
