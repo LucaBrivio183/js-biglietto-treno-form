@@ -15,14 +15,19 @@ const userAge = document.getElementById("input-age").value;
  
 let price = KmPrice * userKm
 
+//define a variable for showing discount on ticket
+
+let discountGroup = 'Biglietto standard';
+
 //apply 20% discount for minors  //apply 40% discount for over65
 
 if( userAge ===  'minor') {
     price -= price * 0.2;
+    discountGroup = 'Sconto minorenni';
     
 } else if ( userAge ===  'over65') {
     price -= price * 0.4;
-    
+    discountGroup = 'Sconto over 65';
 }
 
 //define a variable for generate button 
@@ -37,6 +42,11 @@ const userName = document.getElementById('input-name').value;
 
 const ticket = document.querySelector('.ticket');
 
+//define const variable for CPcode and wagon number (all random)
+
+const wagonNumber = Math.floor(Math.random() * 11);
+const CPcode = Math.floor(Math.random() * 100001) + Math.floor(Math.random() * 10001) + Math.floor(Math.random() * 1001) + Math.floor(Math.random() * 101) + Math.floor(Math.random() * 11);
+
 //show details in ticket element after click
 
 inputButton.addEventListener('click', 
@@ -45,8 +55,11 @@ inputButton.addEventListener('click',
         document.getElementById('name').innerHTML = `${userName}`
         document.getElementById('price').innerHTML = `${price.toFixed(2)} €`
         ticket.classList.add('show');
+        document.getElementById('offer').innerHTML = `${discountGroup}`
+        document.getElementById("carrozza").innerHTML = `${wagonNumber}`;
+        document.getElementById("codicecp").innerHTML = `${CPcode}`;
 });
-
+ 
 
 
 
