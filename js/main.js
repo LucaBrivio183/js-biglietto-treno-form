@@ -25,10 +25,6 @@ if( userAge ===  'minor') {
     
 }
 
-//print final price in console log
-
-console.log(`${price}`);
-
 //define a variable for generate button 
 
 const inputButton = document.getElementById('generate-btn');
@@ -36,16 +32,19 @@ const inputButton = document.getElementById('generate-btn');
 //define a variable for user name from input
 
 const userName = document.getElementById('input-name').value;
-console.log(`${userName}`);
-//show details in ticket element after click
 
+//define a const variable for ticket item to change class on click
+
+const ticket = document.querySelector('.ticket');
+
+//show details in ticket element after click
 
 inputButton.addEventListener('click', 
     
     function() {
         document.getElementById('name').innerHTML = `${userName}`
         document.getElementById('price').innerHTML = `${price.toFixed(2)} €`
-
+        ticket.classList.add('show');
 });
 
 

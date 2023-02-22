@@ -53,6 +53,14 @@ form .buttons {
     padding: 25px;
 }
 
+.ticket {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
 .ticket .print {
     background-color: white;
     text-align: start;
