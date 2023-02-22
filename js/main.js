@@ -29,6 +29,19 @@ if( userAge ===  'minor') {
 
 console.log(`${price}`);
 
+//define a variable for generate button 
+
+const inputButton = document.getElementById('generate-btn');
+
+//show price in another element after click
+
+
+inputButton.addEventListener('click', 
+    
+    function() {
+        document.querySelector('h1').innerHTML = `${price.toFixed(2)} €`
+    }
+)
 
 
 
