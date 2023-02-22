@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #b9144f;
+}
+
 /* common */
 
 .container {
@@ -12,4 +16,50 @@
     max-width: 62.5rem;
     margin: 0 auto;
     text-align: center;
+}
+
+h1 {
+    color: white;
+    padding: 15px 0;
+}
+
+form {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form .inputs {
+    display: flex;
+    justify-content: center;
+}
+
+form .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+}
+
+.ticket .print {
+    background-color: white;
+    text-align: start;
+    color: black;
+    padding: 20px;
+}
+
+.ticket .print .row .col:first-child {
+    background-color: #808080;
 }

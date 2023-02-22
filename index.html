@@ -14,18 +14,60 @@
 </head>
 <body>
     <div class="container">
-        <label for="input-km">Insert km</label>
-        <input type="number" name="userKm" id="input-km">
-        <label for="input-age">Fascia di età:</label>
-        <select id="input-age" name="userAge">
-            <option value="standard">Maggiorenne</option>
-            <option value="minor">Minorenne</option>
-            <option value="over65">Over 65</option>
-        </select>
-        <button type="button" id="generate-btn">Genera</button> 
-    </div>  
-    <p>prezzo:</p>
-    <h1></h1>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <form action="/" method="get">
+            <div class="inputs">
+                <div class="col">
+                    <label for="input-name">Nome Cognome</label>
+                    <input type="text" name="userName" id="input-name">
+                </div>
+                <div class="col">
+                    <label for="input-km">Km da percorrere</label>
+                    <input type="number" name="userKm" id="input-km">
+                </div>
+                <div class="col">
+                    <label for="input-age">Fascia di età:</label>
+                    <select id="input-age" name="userAge">
+                        <option value="standard">Maggiorenne</option>
+                        <option value="minor">Minorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" id="generate-btn">Genera</button>
+                <input type="reset" value="Reset"/>
+            </div>
+        </form> 
+        <div class="ticket">
+            <h1>IL TUO BIGLIETTO</h1>
+            <div class="print">
+                <h2>DETTAGLIO PASSEGGERI</h2>
+                <div class="row">
+                    <div class="col">
+                        <h2>NOME PASSEGGERO</h2>
+                        <h3 id="name"></h3>
+                    </div>
+                    <div class="col">
+                        <h3>Offerta</h3>
+                        <p id="offer"></p>
+                    </div>
+                    <div class="col">
+                        <h3>Carrozza</h3>
+                        <p id="carrozza"></p>
+                    </div> 
+                    <div class="col">
+                        <h3>Codice CP</h3>
+                        <p id="codicecp"></p>
+                    </div>
+                    <div class="col">
+                        <h3>Costo Biglietto</h3>
+                        <p id="price"></p>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- local js files -->
     <script src="js/main.js"></script>
 </body>

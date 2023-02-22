@@ -33,15 +33,20 @@ console.log(`${price}`);
 
 const inputButton = document.getElementById('generate-btn');
 
-//show price in another element after click
+//define a variable for user name from input
+
+const userName = document.getElementById('input-name').value;
+console.log(`${userName}`);
+//show details in ticket element after click
 
 
 inputButton.addEventListener('click', 
     
     function() {
-        document.querySelector('h1').innerHTML = `${price.toFixed(2)} €`
-    }
-)
+        document.getElementById('name').innerHTML = `${userName}`
+        document.getElementById('price').innerHTML = `${price.toFixed(2)} €`
+
+});
 
 
 
