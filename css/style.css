@@ -32,6 +32,24 @@ form {
 form .inputs {
     display: flex;
     justify-content: center;
+    color: #b9144f;
+}
+
+form .inputs input,select{
+    text-align: center;
+    padding: 7.5px 15px;
+    border: 1px solid #b9144f;
+    background-color: transparent;   
+}
+
+form .inputs input:focus-visible {
+    outline: #b9144f;
+    outline-width: .1875rem;
+}
+
+form .inputs select:focus-visible {
+    outline: #b9144f;
+    outline-width: .1875rem;
 }
 
 form .buttons {
@@ -41,9 +59,18 @@ form .buttons {
     padding: 25px;
 }
 
+form .buttons button{
+    color: #b9144f;
+    border: 1px solid #b9144f;
+    border-radius: 7.5px;
+    padding: 7.5px 15px;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
 .col {
@@ -70,4 +97,8 @@ form .buttons {
 
 .ticket .print .row .col:first-child {
     background-color: #808080;
+}
+
+.ticket .print .row .col {
+    justify-content: space-between;
 }

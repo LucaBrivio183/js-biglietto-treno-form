@@ -30,7 +30,7 @@ const ticket = document.querySelector('.ticket');
 
 //define const variable for CPcode and wagon number (all random)
 
-const wagonNumber = Math.floor(Math.random() * 11);
+const wagonNumber = Math.floor(Math.random() * 11) + 1;
 const CPcode = Math.floor(Math.random() * 100001) + Math.floor(Math.random() * 10001) + Math.floor(Math.random() * 1001) + Math.floor(Math.random() * 101) + Math.floor(Math.random() * 11);
 
 //show details in ticket element after click
